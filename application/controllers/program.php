@@ -30,6 +30,13 @@ class program extends CI_controller{
 
     	}
 
-    }		
+    }	
+    
+    function edit($programID){
+        $this->load->model('program_model');
+       $ms_program= $this->program_model->getProgram($programID);
+        $this->load->view('edit');
+
+    }
 }
 ?>

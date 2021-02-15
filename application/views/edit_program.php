@@ -11,7 +11,7 @@
 	</div>
 </div>
 <div class="container">
-	<form method="Post" name="createUser" action="<?php echo base_url().'index.php/program/create';?>">
+	<form method="Post" name="createUser" action="<?php echo base_url().'index.php/program/edit';?>">
 		<div class="row">
 			
 			<div class="col-md-9" >
