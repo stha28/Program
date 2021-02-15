@@ -2,12 +2,11 @@
 defined('BASEPATH') OR exit ('No direct script access allowed');
 class program extends CI_controller{
     public function index()
-    {
-        $this->load->model('user_model');
-		$users=$this->user_model->all();
+    {$this->load->model('program_model');
+		$ms_program=$this->program_model->all();
 		$data =array();
-		$data['users']=$users;
-        $this->load->view('Add_program');
+		$data['ms_program']=$ms_program;
+        $this->load->view('View_program',$data);
     }
 
     function create(){
@@ -17,7 +16,7 @@ class program extends CI_controller{
 
     	if($this->form_validation->run()==false){
 
-        $this->load->view('program');
+        $this->load->view('Add_program');
     	}
     	else{
     		$formArray=array();

@@ -22,16 +22,16 @@
 					<th>Edit</th>
 					<th>Delete</th>
 				</tr>
-				<?php if(!empty($ms_program)) { foreach($ms_program as $program) {?>
+				<?php if(!empty($ms_program)) { foreach($ms_program as $ms_program) {?>
 				<tr>
-					<td><?php echo $program['ID']?></td>
-					<td><?php echo $program['ProgramName']?></td>
-					<td><?php echo $program['Description']?></td>
+					<td><?php echo $ms_program['programID']?></td>
+					<td><?php echo $ms_program['ProgramName']?></td>
+					<td><?php echo $ms_program['Description']?></td>
 		  			<td>
-						<a href="<?php echo base_url().'index.php/user/edit/'.$program['ID']?>" class="btn btn-primary">Edit</a>
+						<a href="<?php echo base_url().'index.php/user/edit/'.$ms_program['programID']?>" class="btn btn-primary">Edit</a>
 					</td>
 					<td>
-						<a href="<?php echo base_url().'index.php/user/delete/'.$program['ID']?>" class="btn btn-danger">Delete</a>
+						<a href="<?php echo base_url().'index.php/user/delete/'.$ms_program['programID']?>" class="btn btn-danger">Delete</a>
 					</td>
 				</tr>
 				<?php } } else {?>

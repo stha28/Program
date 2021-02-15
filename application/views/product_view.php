@@ -46,7 +46,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="<?php echo base_url().'index.php/program';?>" class="nav-link">
+            <a href="<?php echo base_url().'index.php/program/index';?>" class="nav-link">
               <p>Subject</p>
             </a>
           </li>
